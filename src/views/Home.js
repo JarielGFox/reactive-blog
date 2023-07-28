@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className="home">
             {/* questa è una prop */}
-            <BlogList blogs={blogs} title="Blogs List" />
+            <BlogList blogPosts={blogs} title="Blogs List" />
         </div>
     );
 }
