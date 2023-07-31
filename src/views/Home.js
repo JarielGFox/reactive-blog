@@ -5,11 +5,7 @@ const Home = () => {
     // blogs è un array di oggetti al quale applichiamo il metodo map()
     const [blogs, setBlogs] = useState(null);
 
-    // funzione filtrante degli elementi per id
-    const handleDelete = (id) => {
-        const newBlogs = blogs.filter(blog => blog.id !== id);
-        setBlogs(newBlogs);
-    }
+
 
     useEffect(() => {
         fetch('http://localhost:8000/blogs')
@@ -25,7 +21,7 @@ const Home = () => {
     return (
         <div className="home">
             {/* questa è una prop */}
-            {blogs && <BlogList blogPosts={blogs} title="Blogs List" handleDelete={handleDelete} />}
+            {blogs && <BlogList blogPosts={blogs} title="Blogs List" />}
         </div>
     );
 
