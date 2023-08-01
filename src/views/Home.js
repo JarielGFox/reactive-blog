@@ -1,5 +1,4 @@
 // prima destrutturiamo l'hook dello useState e poi importiamo dalla libreria di React;
-import { useState, useEffect } from "react";
 import BlogList from "../components/BlogList";
 import useFetch from "../useFetch";
 
