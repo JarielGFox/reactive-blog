@@ -12,28 +12,43 @@ const useFetch = (url) => {
     // questo per gestire i messaggi di errore
     const [error, setError] = useState(null);
 
-
     useEffect(() => {
-        fetch(url)
-            .then(response => {
+        // questo AbortController ci permette di stoppare la fetch se serve
+        const abortCont = new AbortController();
+
+        // funzione asincrona per il fetch dei dati (utilizziamo async/await)
+        const fetchData = async () => {
+            // usiamo il blocco try/catch siccome stiamo usando async/await
+            try {
+                // usiamo l'await per aspettare che si risolva la promise
+                const response = await fetch(url, { signal: abortCont.signal });
+
+                // se il response è diverso da ok, lanciamo l'errore
                 if (!response.ok) {
                     throw Error('Impossible to fetch data');
                 }
-                return response.json()
-            })
-            .then(data => {
-                console.log(data);
+                // processiamo il response
+                const data = await response.json();
+
                 setData(data);
                 setIsPending(false);
                 setError(null);
-            })
-            .catch((err => {
-                setIsPending(false);
-                setError(err.message);
-            }))
-    }, [url])
+            } catch (err) {
+                if (err.name === 'AbortError') {
+                    setError('Fetch was cancelled');
+                } else {
+                    setIsPending(false);
+                    setError(err.message);
+                }
+            }
+        };
 
-    return { data, isPending, error }
-}
+        fetchData();
+        //cleanup function: viene eseguita quando non ci serve più il componente e cancella la fetch se sta ancora avvenendo
+        return () => abortCont.abort();
+    }, [url]);
+
+    return { data, isPending, error };
+};
 
 export default useFetch;
