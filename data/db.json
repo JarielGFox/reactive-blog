@@ -13,34 +13,40 @@
       "id": 2
     },
     {
-        "title": "Local Woman Wins Nobel Prize for Best Macaroni and Cheese Recipe!",
-        "body": "A woman from a small town in the Midwest has won the Nobel Prize for her incredible macaroni and cheese recipe. The recipe, which includes a secret blend of cheeses and a dash of magic, has been a hit with both family and friends for years.",
-        "author": "Wild Cat",
-        "id": 3
+      "title": "Local Woman Wins Nobel Prize for Best Macaroni and Cheese Recipe!",
+      "body": "A woman from a small town in the Midwest has won the Nobel Prize for her incredible macaroni and cheese recipe. The recipe, which includes a secret blend of cheeses and a dash of magic, has been a hit with both family and friends for years.",
+      "author": "Wild Cat",
+      "id": 3
     },
     {
-        "title": "World's First Robot-Created Art Exhibit Opens to Critical Acclaim!",
-        "body": "In a stunning display of creativity, a group of robots have collaborated to create the world's first robot-generated art exhibit. The exhibit, which includes everything from abstract paintings to intricate sculptures, has been hailed as a masterpiece by art critics and enthusiasts alike.",
-        "author": "Mr Robot",
-        "id": 4
+      "title": "World's First Robot-Created Art Exhibit Opens to Critical Acclaim!",
+      "body": "In a stunning display of creativity, a group of robots have collaborated to create the world's first robot-generated art exhibit. The exhibit, which includes everything from abstract paintings to intricate sculptures, has been hailed as a masterpiece by art critics and enthusiasts alike.",
+      "author": "Mr Robot",
+      "id": 4
     },
     {
-        "title": "Drinking 10 Cups of Coffee Does Not Actually Increase Productivity",
-        "body": "In a shocking revelation, a local man has found that drinking 10 cups of coffee a day does not actually make you more productive. In fact, the man reported feeling more jittery and less focused than ever before.",
-        "author": "Your Neighbour",
-        "id": 5
+      "title": "Drinking 10 Cups of Coffee Does Not Actually Increase Productivity",
+      "body": "In a shocking revelation, a local man has found that drinking 10 cups of coffee a day does not actually make you more productive. In fact, the man reported feeling more jittery and less focused than ever before.",
+      "author": "Your Neighbour",
+      "id": 5
     },
     {
-        "title": "Scientists Find That Talking to Plants Help Them Grow Faster!",
-        "body": "In a study that has rocked the scientific community, researchers have found that talking to plants can actually help them grow faster and stronger. The study's lead author, Dr. Green Thumb, noted that plants respond best to positive affirmations and kind words.",
-        "author": "Dr Green Thumb",
-        "id": 6
+      "title": "Scientists Find That Talking to Plants Help Them Grow Faster!",
+      "body": "In a study that has rocked the scientific community, researchers have found that talking to plants can actually help them grow faster and stronger. The study's lead author, Dr. Green Thumb, noted that plants respond best to positive affirmations and kind words.",
+      "author": "Dr Green Thumb",
+      "id": 6
     },
     {
-        "title": "Local Cat Becomes CEO of Major Corporation",
-        "body": "In a surprising move, a fluffy calico cat has been appointed as the CEO of a major corporation. The cat's platform is focused on taking more naps, grooming, and providing free catnip to all employees.",
-        "author": "Mr Catto",
-        "id": 7
+      "title": "Local Cat Becomes CEO of Major Corporation",
+      "body": "In a surprising move, a fluffy calico cat has been appointed as the CEO of a major corporation. The cat's platform is focused on taking more naps, grooming, and providing free catnip to all employees.",
+      "author": "Mr Catto",
+      "id": 7
+    },
+    {
+      "title": "Articolo di Prova",
+      "body": "Ciao sono un articolo di prova",
+      "author": "Mr.Provola",
+      "id": 8
     }
   ]
 }
