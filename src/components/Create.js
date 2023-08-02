@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState('');
@@ -6,6 +7,7 @@ const Create = () => {
     const [author, setAuthor] = useState('');
     const [isPending, setIsPending] = useState(false);
     const [errorMessage, setErrorMessage] = useState(null);
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         // impedisce il refresh della pagina
@@ -33,8 +35,9 @@ const Create = () => {
             setErrorMessage(error.message);
         } finally {
             setIsPending(false);
+            // ci riporta alla home
+            navigate('/');
         }
-
     }
 
     return (
