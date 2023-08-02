@@ -50,3 +50,24 @@
   color: #7ea3f3;
   margin-bottom: 8px;
 }
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* article details page */
+.article-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.article-details div {
+  margin: 20px 0;
+}
+.article-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

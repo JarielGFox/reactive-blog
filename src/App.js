@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import Create from "./components/Create";
+import ArticleDetails from "./views/ArticleDetails";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Routes>
             {/* qui dentro ci sono i percorsi ai singoli componenti */}
             <Route path="/" element={<Home />} />
-            <Route path="/create" element={<Create />}></Route>
+            <Route path="/create" element={<Create />} />
+            <Route path="/articles/:id" element={<ArticleDetails />} />
           </Routes>
         </div>
       </div>
