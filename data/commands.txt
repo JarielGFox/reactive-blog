@@ -1,1 +1,28 @@
 npx json-server --watch data/db.json --port 8000
+
+//Costruire una funzione async await:
+
+async function functionName() {
+    try {
+        // aspetta il risolversi di una promessa
+        const result = await someAsyncFunction();
+
+        // fai qualcosa con il risultato
+        console.log(result);
+
+        // nel caso avessimo bisogno di attendere per un'altra promessa, usa questa reference:
+        const anotherResult = await someOtherAsyncFunction(result);
+
+        // fai qualcosa con l'altro risultato
+        console.log(anotherResult);
+
+        // esportiamo il valore se serve
+        return anotherResult;
+    } catch (error) {
+        // gestisci l'errore con catch
+        console.error('An error occurred:', error);
+
+        // possiamo "lanciare" l'errore con "throw new Error"
+        throw new Error;
+    }
+}
