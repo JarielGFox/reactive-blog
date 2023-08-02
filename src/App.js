@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import Create from "./components/Create";
 import ArticleDetails from "./views/ArticleDetails";
+import NotFound404 from "./NotFound404";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
             <Route path="/articles/:id" element={<ArticleDetails />} />
+            <Route path="*" element={<NotFound404 />}></Route>
           </Routes>
         </div>
       </div>
